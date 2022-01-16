@@ -1,0 +1,13 @@
+用 js 控制 html 动画
+
+https://animejs.com/
+
+//安装
+npm install animejs --save
+
+//引入
+import anime from 'animejs/lib/anime.es.js';
+
+
+Anime+Vue<极光效果>
+https://www.jianshu.com/p/9fd4b92ef89c

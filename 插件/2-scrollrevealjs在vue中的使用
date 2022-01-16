@@ -1,0 +1,43 @@
+滚动到此元素 就展示动画效果
+
+
+scrollrevealjs在vue中的使用
+https://blog.csdn.net/qq_18747089/article/details/117412333
+
+vue使用scrollReveal滚动插件
+https://blog.csdn.net/weixin_42369292/article/details/86713296
+
+
+-  安装 
+npm install --save vue-scroll-reveal 
+
+- 引用
+import VueScrollReveal from 'vue-scroll-reveal';
+Vue.use(VueScrollReveal,{
+  class: 'v-scroll-reveal',  
+  duration: 1000,
+  scale: 1,
+  distance: '0px',
+  reset:true,
+  mobile: false,
+  useDelay: 'always',
+  origin:'top',
+  delay: 200
+});
+// 或者 
+Vue.use(VueScrollReveal);
+
+- 在你需要的标签上加上`v-scroll-reveal.reset`就行了
+
+<el-col v-for="item in courseList" :key="item.id" :span="8" v-scroll-reveal.reset>
+        <div class="courseBox" @click="toCourseDetail(item)">
+          <el-image :src="item.image_download_url" lazy class="imghover">
+            <div slot="error" class="image-slot">
+              <random-img></random-img>
+            </div>
+          </el-image>
+        </div>
+        <p>
+          <a @click="toCourseDetail(item)">{{ item.name }}</a>
+        </p>
+      </el-col>
