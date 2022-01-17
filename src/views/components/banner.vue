@@ -9,7 +9,7 @@
 					
 					<div class="bannerOver1 bannerOver" :style="{width:innerWidth,height:innerHeight}">
 						<div class="title1">用创新点缀人生，让科技融入理想。</div>
-						<div class="content1">创新科技大平台，智慧生活新引擎。依靠科技进步推动经济跨越式发展。用创新点缀人生，让科技融入理想</div>
+						<div class="content1">创新科技大平台，智慧生活新引擎。依靠科技进步推动经济跨越式发展。用创新点缀人生，让科技融入理想。</div>
 						<div class="bannerBtn1">探索更多</div>
 						
 						
@@ -23,7 +23,7 @@
 					
 					<div class="bannerOver1 bannerOver"  :style="{width:innerWidth,height:innerHeight}">
 						<div class="title2">科技改变世界。</div>
-						<div class="content2">立足科学发展，着力自主创新。加速科技进步，为全市经济社会发展提供有力支撑。凝聚科技创意，成就创新梦想</div>
+						<div class="content2">立足科学发展，着力自主创新。加速科技进步，为全市经济社会发展提供有力支撑。凝聚科技创意，成就创新梦想。</div>
 						<div class="bannerBtn2">探索更多</div>
 					</div>
 				</div>
