@@ -9,32 +9,32 @@
 		</div>
 		
 		<div class="des">
-			<div class="item">
+			<div class="item reveal-400" >
 				<svgIcon icon="bulb-fill" className="icon" class="left"></svgIcon>
 				<div class="right">品牌创意</div>
 				<div class="bottom">为企业设计独特的并能完美呈现企业价值观的视觉</div>
 			</div>
-			<div class="item">
+			<div class="item reveal-600">
 				<svgIcon icon="tubiao-zhexiantu" className="icon" class="left"></svgIcon>
 				<div class="right">整合营销</div>
 				<div class="bottom">通过市场深入分析，制定网络营销战略，网络营销实施</div>
 			</div>
-			<div class="item">
+			<div class="item reveal-800">
 				<svgIcon icon="gouwucheman" className="icon" class="left"></svgIcon>
 				<div class="right">电子商务</div>
 				<div class="bottom">根据企业需求，开设不同的营销渠道，通过网上直销</div>
 			</div>
-			<div class="item">
+			<div class="item reveal-1000">
 				<svgIcon icon="lcd" className="icon" class="left"></svgIcon>
 				<div class="right">网页设计</div>
 				<div class="bottom">通过网站建设，智能建站，域名主机，企业邮箱</div>
 			</div>
-			<div class="item">
+			<div class="item reveal-1200">
 				<svgIcon icon="dashboard" className="icon" class="left"></svgIcon>
 				<div class="right">网站优化</div>
 				<div class="bottom">网站推广是指将网站推广到国内各大知名网站和搜索引擎</div>
 			</div>
-			<div class="item">
+			<div class="item reveal-1400">
 				<svgIcon icon="caidan" className="icon" class="left"></svgIcon>
 				<div class="right">网站架设</div>
 				<div class="bottom">通过绑定域名和服务器，把网站展现给全世界</div>
@@ -44,7 +44,14 @@
 </template>
 
 <script>
+	import scrollReveal from "scrollreveal";
 	export default{
+		//在data中注册
+		data () {
+		  return {
+		    scrollReveal: scrollReveal()
+		  }
+		},
 		computed:{
 			innerWidth(){
 				return this.$store.state.setup.window_innerWidth + `px`
@@ -53,6 +60,37 @@
 				return this.$store.state.setup.window_innerHeight + `px`
 			},
 		},
+		mounted() {
+			this.revealFn(400)
+			this.revealFn(600)
+			this.revealFn(800)
+			this.revealFn(1000)
+			this.revealFn(1200)
+			this.revealFn(1400)
+		  
+		},
+		methods:{
+			revealFn(delay){
+				this.scrollReveal.reveal(`.reveal-${delay}`, {
+				     // 动画的时长
+				      duration: 500,
+				      // 延迟时间
+				      delay: delay,
+				      // 动画开始的位置，'bottom', 'left', 'top', 'right'
+				      origin: 'bottom',
+				      // 回滚的时候是否再次触发动画
+				      reset: true,
+				      // 在移动端是否使用动画
+				      mobile: true,
+				      // 滚动的距离，单位可以用%，rem等
+				      distance: '100px',
+				      // 其他可用的动画效果
+				      opacity: 0.001,
+				      easing: 'linear',
+				      scale: 0.9,
+				});
+			}
+		}
 	}
 </script>
 
@@ -96,7 +134,7 @@
 				width: 30%;
 				height: 100px;
 				// background-color: green;
-				margin-bottom: 20px;
+				margin-bottom: 50px;
 				
 				display: grid;
 				grid-template-columns: 20% 80%;

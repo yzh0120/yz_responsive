@@ -17,18 +17,18 @@ Vue.use(new VueSocketIO({
   },
 }))
 
-import VueScrollReveal from 'vue-scroll-reveal';
-Vue.use(VueScrollReveal,{
-  class: 'v-scroll-reveal',  
-  duration: 1000,
-  scale: 1,
-  distance: '0px',
-  reset:true,
-  mobile: false,
-  useDelay: 'always',
-  origin:'top',
-  delay: 200
-});
+// import VueScrollReveal from 'vue-scroll-reveal';
+// Vue.use(VueScrollReveal,{
+//   class: 'v-scroll-reveal',  
+//   duration: 1000,
+//   scale: 1,
+//   distance: '0px',
+//   reset:true,
+//   mobile: false,
+//   useDelay: 'always',
+//   origin:'top',
+//   delay: 200
+// });
 
 
 import BaiduMap from 'vue-baidu-map'

@@ -6,43 +6,22 @@ npm install --save vue-scroll-reveal
 
 
 --------------------------------------------------------------------------------------------------------
-scrollrevealjs在vue中的使用
-https://blog.csdn.net/qq_18747089/article/details/117412333
+scrollreveal.js中文api
+https://www.cnblogs.com/fzkbk/p/14750242.html
 
-vue使用scrollReveal滚动插件
-https://blog.csdn.net/weixin_42369292/article/details/86713296
 
 vue使用scrollReveal滚动插件
 https://www.cnblogs.com/Strangers/p/14867162.html
 
+vue使用scrollReveal滚动插件
+https://blog.csdn.net/weixin_42369292/article/details/86713296
 
-- 引用
-import VueScrollReveal from 'vue-scroll-reveal';
-Vue.use(VueScrollReveal,{
-  class: 'v-scroll-reveal',  
-  duration: 1000,
-  scale: 1,
-  distance: '0px',
-  reset:true,
-  mobile: false,
-  useDelay: 'always',
-  origin:'top',
-  delay: 200
-});
-// 或者 
-Vue.use(VueScrollReveal);
 
-- 在你需要的标签上加上`v-scroll-reveal.reset`就行了
+scrollrevealjs在vue中的使用
+https://blog.csdn.net/qq_18747089/article/details/117412333
 
-<el-col v-for="item in courseList" :key="item.id" :span="8" v-scroll-reveal.reset>
-        <div class="courseBox" @click="toCourseDetail(item)">
-          <el-image :src="item.image_download_url" lazy class="imghover">
-            <div slot="error" class="image-slot">
-              <random-img></random-img>
-            </div>
-          </el-image>
-        </div>
-        <p>
-          <a @click="toCourseDetail(item)">{{ item.name }}</a>
-        </p>
-      </el-col>
+
+
+
+
+
