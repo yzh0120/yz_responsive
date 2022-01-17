@@ -1,0 +1,17 @@
+Vue 同位数(Isotope)
+https://madewith.cn/445
+
+
+
+npm i vueisotope
+
+
+ import isotope from 'vueisotope'
+  export default { components: { isotope, } 
+  
+  
+  <isotope :options='getOptions()' :list="list" @filter="filterOption=arguments[0]" @sort="sortOption=arguments[0]">
+    <div v-for="element in list" :key="element.id">
+      {{element.name}}
+    </div>
+  </isotope>

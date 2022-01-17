@@ -1,8 +1,8 @@
 <template>
   <div class="body">
-	<banner></banner>
+	<!-- <banner></banner> -->
 	
-	<aboutMe></aboutMe>
+	<!-- <aboutMe></aboutMe> -->
 		
 		
 	
