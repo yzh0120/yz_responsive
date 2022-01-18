@@ -57,7 +57,7 @@
 				return this.$store.state.setup.window_innerWidth + `px`
 			},
 			innerHeight(){
-				return this.$store.state.setup.window_innerHeight + `px`
+				// return this.$store.state.setup.window_innerHeight + `px`
 			},
 		},
 		mounted() {
@@ -79,7 +79,7 @@
 				      // 动画开始的位置，'bottom', 'left', 'top', 'right'
 				      origin: 'bottom',
 				      // 回滚的时候是否再次触发动画
-				      reset: true,
+				      reset: false,
 				      // 在移动端是否使用动画
 				      mobile: true,
 				      // 滚动的距离，单位可以用%，rem等
@@ -99,7 +99,7 @@
 	$bgc:rgb(226,226,226);
 	// rgb(226,226,226)
 	.box{
-		margin-top:100px;
+		margin-bottom:100px;
 		background-color: white;
 		.title{
 			text-align: center;

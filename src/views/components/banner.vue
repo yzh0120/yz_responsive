@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="box">
 		<!-- 轮播图 -->
 		<swiper :options="swiperOption" ref="mySwiper" >
 			<swiper-slide>
@@ -104,6 +104,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+	
+		.box{
+			margin-bottom:100px;
+		}
 		.bannerItem1{
 			overflow: hidden;
 			position: relative;
