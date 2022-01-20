@@ -1,5 +1,7 @@
 <template>
   <div class="body">
+	 <navCom></navCom>
+	  
 	<banner></banner>
 	
 	<aboutMe></aboutMe>
@@ -11,7 +13,7 @@
 </template>
 
 <script>
-
+	import navCom from '@/views/components/navCom.vue';
 	import banner from '@/views/components/banner.vue';
 	import aboutMe from '@/views/components/aboutMe.vue';
 	import successfulCases from '@/views/components/successfulCases.vue';
@@ -24,6 +26,7 @@
 		methods:{
 		},
 		components:{
+			navCom,
 			banner,
 			aboutMe,
 			successfulCases,

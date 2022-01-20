@@ -10,6 +10,7 @@ export default{
 	mobile:false,
 	window_innerWidth: undefined,
 	window_innerHeight: undefined,
+	scrollTop:0,
   },
   // 只能通过此函数修改state的data
   mutations:{
@@ -25,6 +26,22 @@ export default{
 	  state.window_innerHeight = innerHeight
 	  
 	  state.mobile = state.window_innerWidth < 768 ? true : false;
+	},
+	mousewheel_fn(state, params){
+		// var scrollTop = window.pageYOffset  //用于FF
+		//                 || document.documentElement.scrollTop  
+		//                 || document.body.scrollTop  
+		//                 || 0;
+		// // console.log(scrollTop,"scrollTop")
+		// state.scrollTop = scrollTop
+	},
+	scroll_fn(state, params){
+		var scrollTop = window.pageYOffset  //用于FF
+		                || document.documentElement.scrollTop  
+		                || document.body.scrollTop  
+		                || 0;
+		// console.log(scrollTop,"scrollTop")
+		state.scrollTop = scrollTop
 	},
   },
 // 异步
