@@ -23,6 +23,9 @@
 
 			}
 		},
+		methods(){
+			console.log(process.env.VUE_APP_demo,"process.env.VUE_APP_demo")
+		},
 		methods:{
 		},
 		components:{
